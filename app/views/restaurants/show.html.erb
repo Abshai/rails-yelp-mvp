@@ -1,0 +1,13 @@
+<h2>Restaurant:</h2>
+<p><%= @restaurant.name %></p>
+<h2>Address:</h2>
+<p><%= @restaurant.address %></p>
+<h2>Phone:</h2>
+<p><%= @restaurant.phone_number %></p>
+<h2>Category:</h2>
+<p><%= @restaurant.category %></p>
+
+<%= link_to "Delete",
+  restaurant_path(@restaurant),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
